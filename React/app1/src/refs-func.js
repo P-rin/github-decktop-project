@@ -11,7 +11,8 @@ export default function RefsFunc(){
         let n1 = parseInt(num1.current.innerText)
         let n2 = parseInt(num2.current.innerText)
         let r = eval(`${n1}${op}${n2}`)
-        result.current.innerText=op
+        result.current.innerText=r
+        operator.current.innerText=op
     }
     return(
         <div style={{textAlign:'center',marginTop:20,fontsize:18}}>
