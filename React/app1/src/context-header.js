@@ -6,15 +6,15 @@ export default class Header extends React.Component{
     render(){
         const user = this.context
         const headerStyle = {
-            backgroudColor:`#cee`,
-            textAlign:`center`,
+            backgroundColor:'#cee',
+            textAlign:'center',
             padding:5
         }
         return(
             <div style={headerStyle}>
-                <a href=" ">Home</a>&nbsp;&nbsp;
-                <a href=" ">Product</a>&nbsp;&nbsp;
-                <a href=" ">Contact</a>&nbsp;&nbsp;
+                <a href=" ">Home</a>&nbsp;-&nbsp;
+                <a href=" ">Product</a>&nbsp;-&nbsp;
+                <a href=" ">Contact</a>&nbsp;-&nbsp;
                 [{user}&nbsp;&nbsp;<a href=" ">Signout</a>]
             </div>
         )
